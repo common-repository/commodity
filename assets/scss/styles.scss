@@ -1,0 +1,157 @@
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	*zoom: 1;
+}
+
+#commodity_cost, .commodity_cost {
+
+	.label-inline {
+		width:100px;
+		display: inline;
+	}
+
+	.disabled {
+		background-color: #eee;
+	}
+
+	hr { 
+		margin-top: -6px;
+		border-top: 1px solid #eee;
+		border-bottom: none;
+	}
+
+	.muted {
+		color: #aaa;
+	}
+
+	#commodity_shipping_vat_rate {
+		width: 50px;
+	}
+
+	.row {
+
+		padding: 0 0 0 130px;
+
+		.label__container{
+			margin: 0 0 0 -130px;
+			float: left;
+		}
+
+		.input__container {
+
+			width:100%;
+			float: right;
+
+			input {
+				width:100%;
+			}
+		}
+
+		.input__wrapper {
+			
+			padding: 0 0 0 28px;
+			display: block;
+
+			.help-inline {
+				background-color: #eee;
+				border: 1px solid #ddd;
+				padding: 4px 9px 3px 9px;
+				margin: 1px 0 0 -27px;
+				float:left;
+			}
+
+			input {
+				float:right;
+			}
+		}
+
+		.input__wrapper.right {
+			
+			padding: 0 29px 0 0;
+			display: block;
+
+			.help-inline {
+				background-color: #eee;
+				border: 1px solid #ddd;
+				padding: 4px 8px 3px 7px;
+				margin: 1px -29px 0 0;
+				float:left;
+			}
+
+			input {
+				float:left;
+				margin-right:-1px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 780px) {
+		.help-inline {
+			padding-top:9px !important;
+			padding-bottom:7px !important;
+		}
+
+		#commodity_shipping_vat_rate {
+			width: 60px;
+		}
+
+		.row {
+
+			padding: 0 0 0 140px;
+
+			.label__container{
+				margin: 0 0 0 -140px;
+				float: left;
+			}
+		}
+	}
+}
+
+.commodity_discounts_table {
+	
+	text-align: left;
+	font-size: 90%;
+
+	#commodity_discount_expires {
+		width:120px;
+		font-size: 80%;
+	}
+	
+	input {
+		width: 100%;
+		font-size: 90%;
+	}
+
+	th, td {
+		padding: 10px;
+	}
+
+	th, tr:nth-child(even) {
+		background-color: #eee;
+	}
+
+	tfoot tr {
+		background-color: #eee;
+	}
+
+	input.disabled {
+		color:#eee;
+	}
+}
+
+.commodity_options table {
+	
+	span.inline
+	{
+		display: inline-block;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+}
